@@ -193,7 +193,21 @@
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thanhphong39/QuitCare_FE'">
                 Github
             </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thanhphong39/QuitCare_FE'">
+                        <button class="btn btn-color-2 project-btn" onclick="openVideoModal()">
+                Live Demo
+            </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project3.png" alt="Project 3" class="project-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">E-Commerce Shop </h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thanhphong39/Ecommece-shopping'">
+                Github
+            </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ecommece-shopping-front-end.vercel.app/'">
                 Live Demo
             </button>
                     </div>
@@ -212,24 +226,25 @@
             </button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Serum My Pham </h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/thanhphong39/my_pham_serum_qeen'">
-                Github
-            </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://thanhphong39.github.io/my_pham_serum_qeen/'">
-                Live Demo
-            </button>
-                    </div>
-                </div>
+                
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
     </section>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeVideoModal()">&times;</span>
+            <h3>QuitCare Live Demo</h3>
+            <div class="video-container">
+                <video id="demoVideo" controls autoplay muted>
+                    <source src="./assets/QuitCare1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
 
     <section id="contact">
         <p class="section__text__p1">Get in Touch</p>
